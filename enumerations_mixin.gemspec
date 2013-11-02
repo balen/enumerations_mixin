@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
     "lib/active_record/virtual_enumerations.rb",
     "lib/enumerations_mixin.rb"
   ]
-  s.homepage = %q{http://github.com/pivotal/enumerations_mixin}
+  s.homepage = %q{http://github.com/balen/enumerations_mixin}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Allows you to treat instances of your ActiveRecord models as though they were an enumeration of values}
@@ -33,12 +33,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rails>, [">= 3.0.0"])
+      s.add_runtime_dependency(%q<rails>, [">= 3.2.0"])
     else
-      s.add_dependency(%q<rails>, [">= 3.0.0"])
+      s.add_dependency(%q<rails>, [">= 3.2.0"])
     end
   else
-    s.add_dependency(%q<rails>, [">= 3.0.0"])
+    s.add_dependency(%q<rails>, [">= 3.2.0"])
   end
 end
 
