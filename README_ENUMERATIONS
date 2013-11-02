@@ -156,7 +156,7 @@ directory with those class files.  You can use
 ActiveRecord::VirtualEnumerations to reduce that clutter.
 
 Copy virtual_enumerations_sample.rb to
-RAILS_ROOT/config/virtual_enumerations.rb and configure it accordingly.
+Rails.root/config/virtual_enumerations.rb and configure it accordingly.
 
 See virtual_enumerations_sample.rb in this directory for a full
 description.
