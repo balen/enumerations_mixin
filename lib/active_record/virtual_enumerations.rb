@@ -57,7 +57,7 @@ module ActiveRecord
 end #module ActiveRecord
 
 class Module # :nodoc:
-  alias_method :enumerations_original_const_missing, :const_missing
+  alias_method :enumerations_original_const_missing, :const_missing unless method_defined?(:enumerations_original_const_missing)
   def const_missing(const_id)
     # let rails have a go at loading it
     enumerations_original_const_missing(const_id)
