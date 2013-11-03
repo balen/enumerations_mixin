@@ -12,7 +12,7 @@ module ActiveRecord
       end
 
       def synthesize_if_defined(const)
-        options = @config[const]
+        options = @config[const] if @config
         return nil unless options
         class_def = <<-end_eval
           class #{const} < #{options[:extends]}
